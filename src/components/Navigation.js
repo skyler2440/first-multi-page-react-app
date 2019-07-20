@@ -37,6 +37,7 @@ export default class Nav extends Component {
           active={activeItem === 'contactUs'}
           href="/contact"
         />
+      <Menu.Item header position="right">Built with React</Menu.Item>
       </Menu>
     )
   }}
