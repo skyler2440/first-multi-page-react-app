@@ -1,20 +1,7 @@
-// import React from "react";
-// import {NavLink} from 'react-router-dom'
-// const Nav = () => {
-//   return( 
-//   <div>
-// <NavLink to="/">Home</NavLink>
-// <NavLink to="/about">About</NavLink>
-// <NavLink to="/contact">Contact</NavLink>
 
-//   </div>
-//   )
-// };
-  
-// export default Nav;
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
-
+import "../App.css"
 export default class Nav extends Component {
   state = {}
 
@@ -24,7 +11,7 @@ export default class Nav extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu>
+      <Menu className="blue" size="huge" stackable fluid >
         <Menu.Item header>Company Name Here</Menu.Item>
         <Menu.Item
           name='home'

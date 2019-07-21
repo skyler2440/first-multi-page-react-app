@@ -1,21 +1,16 @@
 import React from "react";
-import { Header, Grid } from "semantic-ui-react";
+import { Header, Grid, Image } from "semantic-ui-react";
 import "../App.css"
+import image from "./img/store.jpg"
+import bar from "./img/bar.jpg"
+
 const Home = () => {
   return (
     <Grid celled>
       <Grid.Row>
         <Grid.Column width={3}>
           <Header as="h4">Some Info or A Picture Here</Header>
-          <p>
-            Pork belly you probably haven't heard of them try-hard, small batch
-            hot chicken bespoke yuccie beard jianbing humblebrag fanny pack
-            mlkshk cronut lumbersexual sartorial. Kitsch hashtag kombucha
-            glossier venmo. Mixtape live-edge raw denim venmo snackwave banjo.
-            Listicle poutine freegan, DIY locavore drinking vinegar try-hard
-            woke shaman lo-fi intelligentsia cold-pressed lomo kickstarter. YOLO
-            hot chicken photo booth chillwave banh mi venmo.
-          </p>
+          <Image src={image} fluid />
         </Grid.Column>
         <Grid.Column width={13}>
           <Header as="h1">Some Info or A Picture Here</Header>
@@ -90,16 +85,8 @@ const Home = () => {
         </Grid.Column>
         <Grid.Column width={10}>
           <Header as="h2">Some Info or A Picture Here</Header>
-          <p>
-            Pork belly you probably haven't heard of them try-hard, small batch
-            hot chicken bespoke yuccie beard jianbing humblebrag fanny pack
-            mlkshk cronut lumbersexual sartorial. Kitsch hashtag kombucha
-            glossier venmo. Mixtape live-edge raw denim venmo snackwave banjo.
-            Listicle poutine freegan, DIY locavore drinking vinegar try-hard
-            woke shaman lo-fi intelligentsia cold-pressed lomo kickstarter. YOLO
-            hot chicken photo booth chillwave banh mi venmo.
-          </p>
-        </Grid.Column>
+         <Image src={bar} fluid />
+                 </Grid.Column>
         <Grid.Column width={3}>
           <Header as="h3" color="blue">We can even add some color!</Header>
           <p className="colored">
